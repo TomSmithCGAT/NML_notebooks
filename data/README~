@@ -1,0 +1,8 @@
+scaled ribo-seq data downloaded from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73467
+Embryonic stem cells exhibit mRNA isoform-specific translational regulation
+Wong QW, Vaz C, Lee QY, Zhao TY, Luo R, Archer SK, Preiss T, Tanavde V, Vardy LA
+
+following command used to extract ncbi ids which were then passed to uniprot webpage to obtain uniprot ids using the notebook
+tr "\r" "\n" GSE73467_Scaled_data.csv|cut -f1 -d','|cut -f1 -d'.' |sort |uniq > GSE73467_ncbi_ids
+
+www.uniprot.org/uploadlists
